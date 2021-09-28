@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,55 +8,120 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+
         
     </head>
     <body>
         <div class="main-body">
-            <nav id="navbar" class="nav">
-                <ul class="nav-list">
-                    <li>
-                        <a class="nav-word" href="">Gmail</a>
-                    </li>
-                    <li>
-                        <a class="nav-word" href="">Images</a>
-                    </li>
-                    <li>
-                        <a class="apps" href="" role="button" tabindex="0">
-                            <div class="dots-box">
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
-                                <span class="dot"></span>
+            <header>
+                <div id="navbar" class="navbar">
+                    <div class="nav-list">
+                        <div>
+                            <a class="nav-word" href="" tabindex="2">Gmail</a>
+                        
+                            <a class="nav-word" href="" tabindex="3">Images</a>
+                        </div>
+                        <div>
+                            <a class="apps tooltip" href="" role="button" tabindex="4">
+                                <img src="apps-icon.png">
+                                <span class="tooltip-text">Google apps</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="avatar tooltip2" href="">
+                                <img src="google-avatar.png">
+                                <span class="tooltip-text2">
+                                    Google Account<br>
+                                    <span style="color: #9b9b9b;">Name Surname<br>
+                                        email@gmail.com</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        
+            <div class="content">
+                <div id="google-logo" class="logo-box">
+                    <div class="log-set" href="home.html">
+                        <img src="google_logo.png" height="92" width="272" class="logo">
+                    </div>
+                </div>
+
+                <div id="search" class="search-items">
+                    <div id="search-bar" class="search-container">
+                        <form class="search-box">
+                            <img class="search-icon" src="magnify-glass.png"/>
+                            <input class="search-input" type="text" placeholder=" " tabindex="0"/>
+                            <button class="clear-icon" type="reset"></button>
+                            <div class="tooltip3" href="">
+                                <img class="voice-icon" src="voice-image.png"/>
+                                <span class="tooltip-text3">Search by voice</span>
                             </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=""></a>
-                    </li>
-                    
-
-                </ul>
-            </nav>
-
-            <div id="google-logo" class="logo-box">
-                <div class="log-set" href="home.html">
-                    <img src="google_logo.png" height="92" width="272" class="logo">
+                        </form>
+                        
+                    </div>
+                    <div class="search-buttons">
+                        <div>
+                            <button class="search-but" type="submit">Google Search</button>
+                            <button class="search-but" type="button">I'm Feeling Lucky</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="language-select">
+                    <p class="languages">Google offered in: 
+                        <a href="">Language1</a> 
+                        <a href="">Language2</a>
+                        <a href="">Language3</a>
+                        <a href="">Language4</a>
+                        <a href="">Language5</a>
+                        <a href="">Language6</a>
+                    </p>
                 </div>
             </div>
+            <div id="footer" class="footer">
+                <div id="location" class="location">
+                    Location
+                </div>
+                
+                <div id="about" class="about">
+                    
+                    <p href=""><img src="carbon-neutral.png"> Carbon neutral since 2007</p>
+                    <div class="about-footer">
+                        
+                        <ul class="about-list">
+                            <li>
+                                <a class="about-word">About</a>
+                            </li>
+                            <li>
+                                <a class="about-word">Advertising</a>
+                            </li>
+                            <li>
+                                <a class="about-word">Business</a>
+                            </li>
+                            <li>
+                                <a class="about-word">How Search Works</a>
+                            </li>
 
-            <div id="search" class="search-container">
-                <input class="search-input" type="search">
+                        </ul>
+                        <ul class="about-list">
+                            
+                            <li>
+                                <a class="about-word">Privacy</a>
+                            </li>
+                            <li>
+                                <a class="about-word">Terms</a>
+                            </li>
+                            <li>
+                                <a class="about-word">Settings</a>
+                            </li>
 
+                        </ul>
+
+                    </div>
+                </div>
             </div>
-            <div>
-
-            </div>
-        
         </div>
     </body>
 </html>
