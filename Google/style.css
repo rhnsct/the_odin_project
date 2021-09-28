@@ -37,7 +37,7 @@ h2 {
 	flex-flow: column;
 	height: 100%;
 }
-
+/* Header/Navbar */
 header {
 	height: 60px;
 }
@@ -64,6 +64,7 @@ header {
 	flex: 0 0 auto;
 }
 
+/* Align items on nav bar */
 .nav-list a {
 	display: inline-block;
 	vertical-align: middle;
@@ -80,6 +81,7 @@ header {
 	text-decoration: underline;
 }
 
+/* Shape and size the app icon */
 .apps {
 	display: flex;
 	justify-content: center;
@@ -99,6 +101,7 @@ header {
 	background-color: #eeeeee;
 }
 
+/* Shape and size of the user avatar */
 .avatar {
 	margin-top: 8px;
 	height: 40px;
@@ -116,6 +119,7 @@ header {
 	background-color: #eeeeee;
 }
 
+/* Dropdown styling for tooltip for apps icon and avatar */
 .tooltip {
 	position: relative;
 	display: inline-block;
@@ -175,6 +179,7 @@ header {
 	visibility: visible;
 }
 
+/* Styling of the logo and search input */
 .content {
 	height: calc(100% - (141px + 60px));
 }
@@ -185,7 +190,6 @@ header {
 	flex-direction: column;
 	align-items: center;
 	min-height: 94px;
-	/* height: calc(100% - 560px); */
 	width: 100%;
 }
 
@@ -361,6 +365,7 @@ form button {
 	color: #1a0dab;
 }
 
+/* Style for footer and it's items */
 .footer {
 	background-color: #f2f2f2;
 	height: 151px;
