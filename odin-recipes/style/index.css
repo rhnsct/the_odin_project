@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('../images/wood.jpeg');
+
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    background-color: rgba(192, 192, 192, 0.11);
+}
+
+.welcome-screen {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100;
+    height: 100vh;
+    background-image: url('../images/background-table.jpeg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-shadow: -1px -1px 0 #FFF, 1px -1px 0 #FFF, -1px 1px 0 #FFF, 1px 1px 0 #FFF;
+}
+
+.welcome-screen h1 {
+    display: flex;
+    justify-content: center;
+    text-shadow: inherit;
+    font-family: inherit;
+    font-size: 60px;
+    
+}
+
+.welcome-screen p {
+    display: flex;
+    justify-content: center;
+    font-family: inherit;
+    text-shadow: inherit;
+    font-size: 40px;
+}
+
+.recipes {
+    text-align: center;
+    padding: 7rem 2rem;
+    background-color: rgba(224, 189, 144);
+}
+
+.recipes-header {
+    margin: 0 auto 5rem auto;
+}
+
+@media (max-width: 72em) {
+    .recipes-header {
+      font-size: 3rem;
+    }
+}
+
+.recipes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    gap: 3rem;
+}
+
+@media (max-width: 30.625em) {
+    .recipes {
+      padding: 6rem 1rem;
+    }
+  
+    .recipe-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  }
+
+.recipe {
+    background: rgb(0, 0, 0);
+    padding: 0;
+    
+    border-radius: 2px;
+}
+
+.recipe-name {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.recipe-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+    cursor: pointer;
+    
+}
+
+.recipe:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.recipe:hover .recipe-name{
+    visibility: visible;
+}
+
+.recipe:hover  .recipe-image{
+    filter: opacity(50%);  
+}
+
+.recipe-tile {
+    padding: 0rem 0rem;
+    position: relative;
+}
+
+
+

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9rem;
+    width: 100%;
+    background-color: rgba(250, 218, 149, 0.11);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url('../images/wood.jpeg');
+
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    background-color: rgba(192, 192, 192, 0.11);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    
+}
+
+.content h1 {
+    font-family: 'DM Serif Text', serif;
+    font-weight: 900;
+    font-size: 50px;
+    padding: 40px 0 60px 0;
+    margin: 0 calc((100% - 70%)/4);
+}
+
+.content h2 {
+    font-family: 'DM Serif Text', serif;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 20px 0px 30px 0;
+}
+
+.content h3 {
+    font-family: 'DM Serif Text', serif;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 20px 0px 10px 28px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 calc((100% - 70%)/2);
+    border-bottom: 2px solid #dfe1e5;
+    padding-bottom: 20px;
+
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(192, 192, 192, 0.11);
+    
+}
+
+.recipe-image {
+    width: auto;
+    height: 300px;
+}
+
+
+.meal-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    min-height: 120px;
+    border-radius: 5px;
+    margin-top: 20px;
+    
+}
+
+.info-list ul {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    line-height: 50px;
+    color: #2e2e2e;
+
+}
+
+.info-list ul li {
+    display: table-cell;
+    width: auto;
+    text-align: center;
+}
+
+.meal-info a{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    cursor: pointer;
+    color: #2e2e2e;
+    text-decoration: none;
+}
+
+.meal-info a:hover {
+    text-decoration: underline;
+}
+
+.ingredients-list {
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.ingredients-list ul {
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    padding-left: 10px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    line-height: 30px;
+}
+ol li {
+    counter-increment: my-awesome-counter;
+}
+ol li::before {
+    content: "Step "counter(my-awesome-counter)" \a ";
+    white-space: pre;
+    font-weight: bold;
+}
+
