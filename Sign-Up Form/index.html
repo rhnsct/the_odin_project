@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js"></script>
+    
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="left">
+            <div>
+                <img src="Valknut1.svg" alt="Odin Symbol">
+                <h1>ODIN</h1>
+            </div>
+
+        </div> 
+        <div class="right">
+            <div>
+                <h3>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</h3>
+                <h3>You <i>know</i> you want to.</h3>
+                
+            </div>
+            <form>
+                <fieldset>
+                    <h3>Let's do this!</h3>
+                    <div class="grid">
+                        <div>
+                            <label for="firstName">*FIRST NAME</label>
+                            <input type="text" name="first-name" id="firstName" title="First Name" required placeholder=" ">
+                        </div>
+                        <div>
+                            <label for="lastName">*LAST NAME</label>
+                            <input type="text" name="last-name" id="lastNAme" title="Last Name" required placeholder=" ">
+                        </div>
+                        <div>
+                            <label for="email">*EMAIL</label>
+                            <input type="email" name="email" id="email" title="Email" required placeholder=" " >
+                            <div class="requirements">* Email must be in the format example@email.com</div>
+                        </div>
+                        <div>
+                            <label for="phoneNumber">PHONE NUMBER</label>
+                            <input pattern="(^0.*)(?=.*[0-9]).{9}" type="tel" name="phone-number" id="phoneNumber" title="Phone Number" placeholder=" " required>
+                            <div class="requirements">* Must be in the format 0876543210.</div>
+                        </div>
+                        <div>
+                            <label for="password">*PASSWORD</label>
+                            <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" type="password" name="password" id="password" title="Password" required placeholder=" ">
+                            <div class="requirements">* Password must be at least eight characters containing: 
+                               <br>
+                               <br>
+                                <ul>
+                                    <li>One upper case letter.</li>
+                                    <li>One lower case letter.</li>
+                                    <li>One number.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="confirmPass">*CONFIRM PASSWORD</label>
+                            <input oninput="checkPassword(this)" type="password" name="confirm-password" id="confirmPass" title="Confirm Password" required  placeholder=" ">
+                            <div class="requirements">* Password does not match.</div>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <button type="submit">Create Account</button>
+                
+            </form>
+            <a href="">Log in</a>
+        </div>
+    </div>
+    
+</body>
+</html>
